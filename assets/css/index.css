@@ -9,12 +9,17 @@ html {
     --font-size: 1.2rem;
     --font-color: #f5f5f5;
     --background: #fafaf4;
-    --email: #FF6500;
-    --texto-p: #FF6500;
-    --texto-h: #f6aa1c;
-    --curriculo: #f6aa1c;
+    
+    --texto-p: #7E30E1;
+    --texto-h: #2802ff;
+    /* --curriculo: #f6aa1c; */
+    /* --email: #FF6500; */
+    --curriculo: #49108B;
+    --email: #2802ff;
+    
+    
     --radius: 10px;
-}
+}   
 
 body,
 button {
@@ -58,21 +63,6 @@ p {
     color: var(--texto-p);
 }
 
-/* #icones-midia {
-    display: flex;
-    gap: 1rem;
-}
-
-#icones-midia img {
-    cursor: pointer;
-}
-
-#buttons {
-    display: flex;
-    gap: 2rem;
-} */
-
-
 button {
     padding: 0;
     height: 45px;
@@ -114,24 +104,3 @@ button#curriculo:hover {
 
     position: relative;
 }
-
-
-/* #perfil {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
-    z-index: 1;
-
-    max-width: 400px;
-} */
-
-/* #inf-esquerdo {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-} */
-
-/* #sup-direito {
-    position: absolute;
-    right: 0;
-    top: 0;
-} */
