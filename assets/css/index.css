@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    --font: "Poppins", sans-serif;
+    --font-size: 1.2rem;
+    --font-color: #f5f5f5;
+    --background: #fafaf4;
+    --email: #c92071;
+    --curriculo: #f6aa1c;
+    --radius: 10px;
+}
+
+body,
+button {
+    font-size: var(--font-size);
+    font-family: var(--font);
+}
+
+body {
+
+    background: linear-gradient(120deg, #040D12, #183D3D);
+    color: rgb(184, 184, 184);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 3rem 5rem;
+
+    display: grid;
+
+    gap: 6rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 2.25rem;
+    margin: 1.5rem 0;
+}
+
+p {
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+
+#icones-midia {
+    display: flex;
+    gap: 1rem;
+}
+
+#icones-midia img {
+    cursor: pointer;
+}
+
+#buttons {
+    display: flex;
+    gap: 2rem;
+}
+
+
+button {
+    padding: 0;
+    height: 45px;
+    width: 170px;
+    border-radius: var(--radius);
+    cursor: pointer;
+}
+
+button#email {
+    background-color: var(--email);
+    color: var(--font-color);
+    border: 0;
+}
+
+button#email:hover {
+    background-color: transparent;
+    border: 2px solid var(--email);
+    color: var(--email);
+}
+
+button#curriculo {
+    background-color: transparent;
+    border: 2px solid var(--curriculo);
+    color: #ffffff;
+}
+
+button#curriculo:hover {
+    background-color: var(--curriculo);
+}
+
+.direito {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+
+#perfil {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    z-index: 1;
+
+    max-width: 400px;
+}
+
+#inf-esquerdo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#sup-direito {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
